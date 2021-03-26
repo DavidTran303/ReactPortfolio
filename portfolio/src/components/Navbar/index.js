@@ -2,6 +2,10 @@ import React from "react";
 import "./style.css";
 import 'bootstrap/dist/css/bootstrap.min.css'
 import {Navbar, Nav} from 'react-bootstrap';
+import Contact from "../../pages/contact";
+import Portfolio from "../../pages/portfolio";
+import About from "../../pages/about";
+import App from "../../App"
 
 function NavBar() {
   return (
@@ -10,10 +14,10 @@ function NavBar() {
   <Navbar.Toggle aria-controls="basic-navbar-nav" />
   <Navbar.Collapse id="basic-navbar-nav">
     <Nav className="mr-auto">
-      <Nav.Link href="#contact">Contact</Nav.Link>
-      <Nav.Link href="#portfolio">Portfolio</Nav.Link>
-      <Nav.Link href="#about">About</Nav.Link>
-      <Nav.Link href="#link">LinkedIn</Nav.Link>
+      <Nav.Link href="/">Contact</Nav.Link>
+      <Nav.Link href="/portfolio">Portfolio</Nav.Link>
+      <Nav.Link href="/about">About</Nav.Link>
+      <Nav.Link href="">LinkedIn</Nav.Link>
     </Nav>
   </Navbar.Collapse>
 </Navbar>

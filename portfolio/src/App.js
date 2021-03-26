@@ -17,52 +17,27 @@ function App() {
     <>
     <div>
     <Router>
-      <NavBar>
+          <NavBar></NavBar>
       <div>
-        <nav>
-          <ul>
-            <li>
-              <Link path="/" component={Contact}>Contact</Link>
-            </li>
-            <li>
-              <Link path="/portfolio" component={Portfolio}>Portfolio</Link>
-            </li>
-            <li>
-              <Link path="/about" component={About}>About</Link>
-            </li>
-          </ul>
-        </nav>
         <Switch>
-          <Route path="/" component={Contact}>
+          <Route exact path="/" component={Contact}>
             <Contact/>
           </Route>
-          <Route path="/portfolio" component={Portfolio}>
+                <Route exact path="/portfolio" component={Portfolio}>
             <Portfolio>
               <Card/>
             </Portfolio>
           </Route>
-          <Route path="/about" component={About}>
+                <Route exact path="/about" component={About}>
             <About />
           </Route>
         </Switch>
       </div>
-        </NavBar>
       <Footer/>
     </Router>
     </div>
     </>
   );
-function Contact() {
-  return <h2>Contact</h2>;
-}
-
-function Portfolio() {
-  return <h2>Portfolio</h2>;
-}
-
-function About() {
-  return <h2>About</h2>;
-}
 }
 
 export default App;

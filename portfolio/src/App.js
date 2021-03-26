@@ -22,26 +22,26 @@ function App() {
         <nav>
           <ul>
             <li>
-              <Link to="/">Contact</Link>
+              <Link path="/" component={Contact}>Contact</Link>
             </li>
             <li>
-              <Link to="/portfolio">Portfolio</Link>
+              <Link path="/portfolio" component={Portfolio}>Portfolio</Link>
             </li>
             <li>
-              <Link to="/about">About</Link>
+              <Link path="/about" component={About}>About</Link>
             </li>
           </ul>
         </nav>
         <Switch>
-          <Route path="/">
+          <Route path="/" component={Contact}>
             <Contact/>
           </Route>
-          <Route path="/portfolio">
+          <Route path="/portfolio" component={Portfolio}>
             <Portfolio>
               <Card/>
             </Portfolio>
           </Route>
-          <Route path="/about">
+          <Route path="/about" component={About}>
             <About />
           </Route>
         </Switch>

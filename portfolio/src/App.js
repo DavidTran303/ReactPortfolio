@@ -14,6 +14,7 @@ import {
 
 function App() {
   return (
+    <>
     <div>
     <Router>
       <NavBar>
@@ -31,9 +32,6 @@ function App() {
             </li>
           </ul>
         </nav>
-
-        {/* A <Switch> looks through its children <Route>s and
-            renders the first one that matches the current URL. */}
         <Switch>
           <Route path="/">
             <Contact/>
@@ -52,6 +50,7 @@ function App() {
       <Footer/>
     </Router>
     </div>
+    </>
   );
 function Contact() {
   return <h2>Contact</h2>;

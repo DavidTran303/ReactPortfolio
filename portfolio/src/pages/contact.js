@@ -1,5 +1,5 @@
 import React from "react";
-import images from "../images/aboutme.jpg"
+
 
 
 
@@ -9,7 +9,7 @@ function Contact(){
     <div>
     <h1>Contact Page</h1>
    <div className="card" />
-  <img className="card-img-top" src={Image} alt="Card image cap"/>
+  <img className="card-img-top" src="/images/aboutme.jpeg" alt="Me"/>
   <div className="card-body">
     <h5 className="card-title">David Tran</h5>
     <li className="card-text">Email: davtran303@gmail.com</li>

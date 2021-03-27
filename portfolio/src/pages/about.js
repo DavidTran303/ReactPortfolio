@@ -6,9 +6,10 @@ import {Card,Button} from 'react-bootstrap';
 function About(){
     return(
 <>
+  
     <h1>About Page</h1>
   <Card style={{ width: '18rem'}}>
-  <Card.Img variant="top" src="holder.js/100px180" />
+  <Card.Img variant="top" src="/images/aboutme.jpeg" />
   <Card.Body>
     <Card.Title>About Me</Card.Title>
     <Card.Text>
@@ -22,7 +23,6 @@ function About(){
                 <p2 class="aboutmep2"> My goal at the end of this boot camp is to find a long lasting career in the coding industry.Like an art-style coding company pick me up to design aesthic website, logos, pictures, and etc.
                 </p2>
     </Card.Text>
-    <Button variant="primary">Go somewhere</Button>
   </Card.Body>
 </Card>
 </>

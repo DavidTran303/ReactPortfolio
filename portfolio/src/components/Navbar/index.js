@@ -17,7 +17,6 @@ function NavBar() {
       <Nav.Link href="/">Contact</Nav.Link>
       <Nav.Link href="/portfolio">Portfolio</Nav.Link>
       <Nav.Link href="/about">About</Nav.Link>
-      <Nav.Link href="">LinkedIn</Nav.Link>
     </Nav>
   </Navbar.Collapse>
 </Navbar>

@@ -1,19 +1,30 @@
-import React from "react";import Card from "../components/Card"
+import React from "react";
+import Card from 'react-bootstrap/Card';
 import {Button} from 'react-bootstrap';
 
 
 function Portfolio(){
     return(
     <>
-    <Card style={{ width: '18rem' }}>
-  <Card.Img variant="top" src="holder.js/100px180" />
+    <h1>Portfolio</h1>
+<Card style={{ width: '18rem' }}>
+  <Card.Img variant="top" src="/images/project1.png" />
   <Card.Body>
-    <Card.Title>Card Title</Card.Title>
-    <Card.Text>
-      Some quick example text to build on the card title and make up the bulk of
-      the card's content.
+    <Card.Title>Project 1</Card.Title>
+    <Card.Text >
+      First website ever built
     </Card.Text>
-    <Button variant="primary">Go somewhere</Button>
+    <Button href="https://davidtran303.github.io/DuGroupProject1/">Github</Button>
+  </Card.Body>
+</Card>
+<Card style={{ width: '18rem' }}>
+  <Card.Img variant="right" src="/images/adventureops.png" />
+  <Card.Body>
+    <Card.Title>Adventureops</Card.Title>
+    <Card.Text>
+        First full stack application 
+    </Card.Text>
+    <Button href="https://adventureops.herokuapp.com/login">Github</Button>
   </Card.Body>
 </Card>
  </>

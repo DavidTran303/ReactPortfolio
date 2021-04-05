@@ -15,13 +15,14 @@ import {
 function App() {
   return (
     <>
-    <div>
+  
     <Router>
-          <NavBar></NavBar>
-      <div>
+          <NavBar>
         <Switch>
-          <Route exact path="/" component={Contact}>
+          <Route>
+            <Link to ="/">
             <Contact/>
+            </Link>
           </Route>
                 <Route exact path="/portfolio" component={Portfolio}>
             <Portfolio>
@@ -32,10 +33,10 @@ function App() {
             <About />
           </Route>
         </Switch>
-      </div>
+      </NavBar>
       <Footer/>
     </Router>
-    </div>
+
     </>
   );
 }

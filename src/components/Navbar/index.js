@@ -7,7 +7,7 @@ import Portfolio from "../../pages/portfolio";
 import About from "../../pages/about";
 import App from "../../App"
 
-function NavBar() {
+function NavBar(props) {
   return (
  <Navbar bg="light" expand="lg">
   <Navbar.Brand href="#home">David Tran</Navbar.Brand>

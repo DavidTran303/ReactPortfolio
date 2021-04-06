@@ -14,30 +14,27 @@ import {
 
 function App() {
   return (
-    <>
-  
-    <Router>
-          <NavBar>
+      <Router>
+      <div>
+        <NavBar>
+            <Link to="/">Contact</Link>
+            <Link to="/about">About</Link>
+            <Link to="/portfolio">Portfolio</Link>
+        </NavBar>
+        
         <Switch>
-          <Route>
-            <Link to ="/">
-            <Contact/>
-            </Link>
+          <Route exact path="/">
+            <Contact />
           </Route>
-                <Route exact path="/portfolio" component={Portfolio}>
-            <Portfolio>
-              <Card/>
-            </Portfolio>
-          </Route>
-                <Route exact path="/about" component={About}>
+          <Route path="/about">
             <About />
           </Route>
+          <Route path="/portfolio">
+            <Portfolio/>
+          </Route>
         </Switch>
-      </NavBar>
-      <Footer/>
+      </div>
     </Router>
-
-    </>
   );
 }
 

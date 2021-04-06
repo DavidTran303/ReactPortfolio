@@ -5,7 +5,7 @@ import {Navbar, Nav} from 'react-bootstrap';
 import Contact from "../../pages/contact";
 import Portfolio from "../../pages/portfolio";
 import About from "../../pages/about";
-import App from "../../App"
+
 
 function NavBar(props) {
   return (

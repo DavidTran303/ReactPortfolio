@@ -31,6 +31,7 @@ function App() {
           </Route>
           <Route path="/portfolio">
             <Portfolio/>
+            <Card/>
           </Route>
         </Switch>
       </div>

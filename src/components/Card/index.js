@@ -4,7 +4,7 @@ import {Button} from 'react-bootstrap';
 function Card() {
   return (
     <>
-  <h1>Hello</h1>
+  <h1></h1>
     </>
   );
 }

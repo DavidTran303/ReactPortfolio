@@ -1,0 +1,47 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+:root{
+    --primary-white: #66FFFF;
+    --primary-blue:blue;
+    --primary-dark: rgba(255,255, 255,0)
+}
+
+
+/* navbar */
+.logo{
+ width: 12rem;
+}
+
+/* menu links */
+
+nav a.nav-link{
+letter-spacing: 0.0375rem;
+cursor: pointer;
+}
+
+nav ul li{
+text-transform: uppercase;
+font-family:"Lobster";
+}
+
+.navbar-nav > li > a{
+margin-right:0.75rem;
+margin-left:0.75rem;
+color:var(--primary-white)  !important;
+border-top: 0.1875rem solid var(--primary-dark);
+}
+
+.navbar-brand{
+    max-width: 10rem;
+    padding: 0 !important;
+    height: 10rem !important;
+}
+
+.navbar-nav > li > a.active, .navbar-nav > li > a:focus{
+    border-top: 0.1875rem solid var(--primary-blue);
+}
+
+.navbar-nav > li > a:hover{
+    border-top: 0.1875rem solid var(--primary-blue);
+}

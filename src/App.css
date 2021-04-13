@@ -2,15 +2,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
 
 :root{
-    --primary-white: #66FFFF;
+    --primary-white:white;
+    --primary-pink: pink;
     --primary-blue:blue;
-    --primary-dark: rgba(255,255, 255,0)
+    --primary-dark: rgba(255,255, 255,0);
+    --primary-red: #ef4035;
+    --primary-hover-red: #ef4035;
 }
 
 
 /* navbar */
 .logo{
- width: 12rem;
+ width: 10rem;
 }
 
 /* menu links */
@@ -31,6 +34,9 @@ margin-left:0.75rem;
 color:var(--primary-white)  !important;
 border-top: 0.1875rem solid var(--primary-dark);
 }
+.navbar {
+    min-height: 30px !important;
+}
 
 .navbar-brand{
     max-width: 10rem;
@@ -45,3 +51,66 @@ border-top: 0.1875rem solid var(--primary-dark);
 .navbar-nav > li > a:hover{
     border-top: 0.1875rem solid var(--primary-blue);
 }
+
+/* Header */
+.header-wraper{
+    position: relative;
+    background: url(codingbg.jpeg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 90vh;
+}
+
+.main-info{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family:"Lobster";
+    position: absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+}
+
+.main-info h1{
+    display: flex;
+    color:orangered;
+    text-transform: uppercase;
+    margin: 7rem;
+}
+
+/* Typed Text Affect */
+
+.typed-text{
+    font-size: 2rem;
+    color: black;
+}
+
+/* Header */
+.btn-main-offer{
+    border:0.5px solid green;
+    text-transform: uppercase;
+    border-radius: 0;
+    padding: 0.725rem 0.5rem 0.5rem 0.5rem;
+    color: green;
+    margin: 2rem;
+}
+
+.btn-main-offer:hover{
+    text-decoration: none;
+    background-color: var(--primary-hover-red);
+    color: var(--primary-white);
+    transition: .2s ease-in-out;
+}
+
+/* Particles */
+.tsparticles-canvas-el{
+    position: absolute;
+    height: 100vh;
+    width:100vw;
+    z-index: 1;
+}
+

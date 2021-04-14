@@ -1,12 +1,12 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
-import Navbar from './components/Navbar';
+import Navbar from './component/Navbar';
 import "./App.css";
-import Header from './components/Header';
+import Header from './component/Header';
 import Particles from 'react-particles-js';
-import Aboutme from './components/pages/Aboutme';
-import Portfolio from './components/pages/Portfolio';
-import Contacts from './components/pages/Contacts';
+import Aboutme from './component/pages/Aboutme';
+import Portfolio from './component/pages/Portfolio';
+import Contacts from './component/pages/Contacts';
 
 import {
   BrowserRouter as Router,
@@ -41,9 +41,9 @@ function App() {
     <Switch>
     <Navbar>
       
-     <Route path="/Aboutme" components={Aboutme} />
-     <Route path="/Portfolio" components={Portfolio} />
-     <Route path="/Contacts" components={Contacts} />
+     <Route path="/Aboutme" component={Aboutme} />
+     <Route path="/Portfolio" component={Portfolio} />
+     <Route path="/Contacts" component={Contacts} />
 
       </Navbar>
     </Switch>

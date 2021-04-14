@@ -6,7 +6,7 @@ import Header from './components/Header';
 import Particles from 'react-particles-js';
 import Aboutme from './components/pages/Aboutme';
 import Portfolio from './components/pages/Portfolio';
-import Contacts from './components/pages/Aboutme';
+import Contacts from './components/pages/Contacts';
 
 import {
   BrowserRouter as Router,
@@ -41,9 +41,9 @@ function App() {
     <Switch>
     <Navbar>
       
-     <Route path="/Aboutme" componenet={Aboutme} />
-     <Route path="/Portfolio" componenet={Portfolio} />
-     <Route path="/Contacts" componenet={Contacts} />
+     <Route path="/Aboutme" components={Aboutme} />
+     <Route path="/Portfolio" components={Portfolio} />
+     <Route path="/Contacts" components={Contacts} />
 
       </Navbar>
     </Switch>

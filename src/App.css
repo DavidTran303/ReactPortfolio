@@ -10,7 +10,9 @@
     --primary-hover-red: #ef4035;
 }
 
-
+nav{
+z-index: 2;
+}
 /* navbar */
 .logo{
  width: 10rem;
@@ -41,11 +43,12 @@ border-top: 0.1875rem solid var(--primary-dark);
 .navbar-brand{
     max-width: 10rem;
     padding: 0 !important;
-    height: 10rem !important;
+    height: 6.5rem !important;
 }
 
 .navbar-nav > li > a.active, .navbar-nav > li > a:focus{
-    border-top: 0.1875rem solid var(--primary-blue);
+    border-top: 0.2rem solid blue;
+    color:blue;
 }
 
 .navbar-nav > li > a:hover{
@@ -64,45 +67,52 @@ border-top: 0.1875rem solid var(--primary-dark);
 .main-info{
     display:flex;
     flex-direction: column;
-    justify-content: center;
+    /* justify-content: center;
     align-items: center;
-    text-align: center;
+    text-align: center; */
     font-family:"Lobster";
     position: absolute;
     top:0;
     left:0;
     right:0;
     bottom:0;
+    z-index:1;
 }
 
 .main-info h1{
     display: flex;
-    color:orangered;
+    content: 'Examp';
+    color: black;
+    font-size: 32px;
     text-transform: uppercase;
-    margin: 7rem;
+    font-family:"Lobster";
 }
 
 /* Typed Text Affect */
 
 .typed-text{
     font-size: 2rem;
-    color: black;
+    color: #49fb35;
+    font-family:"Lobster";
 }
 
 /* Header */
 .btn-main-offer{
-    border:0.5px solid green;
+    border:0.5px solid #49fb35;
+    background-color: #49fb35;
     text-transform: uppercase;
     border-radius: 0;
     padding: 0.725rem 0.5rem 0.5rem 0.5rem;
-    color: green;
+    color: black;
     margin: 2rem;
+    width:7rem;
 }
 
 .btn-main-offer:hover{
     text-decoration: none;
     background-color: var(--primary-hover-red);
     color: var(--primary-white);
+    margin:2rem;
     transition: .2s ease-in-out;
 }
 
@@ -114,3 +124,6 @@ border-top: 0.1875rem solid var(--primary-dark);
     z-index: 1;
 }
 
+@media(max-width:768px){
+
+}

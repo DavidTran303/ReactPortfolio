@@ -4,9 +4,21 @@ import Navbar from './components/Navbar';
 import "./App.css";
 import Header from './components/Header';
 import Particles from 'react-particles-js';
+import Aboutme from './components/pages/Aboutme';
+import Portfolio from './components/pages/Portfolio';
+import Contacts from './components/pages/Aboutme';
+
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link
+} from "react-router-dom";
+
 function App() {
   return (
     <>
+    <Router>
     <Particles 
     params={{
       particles:{
@@ -17,18 +29,27 @@ function App() {
           }
         },
         shape:{
-          type:"circle",
+          type:"triangle",
           stroke:{
-            width: 6,
-            color:"#f9ab00"
+            width: 8,
+            color:"pink"
           }
         }
       }
     }}
     />
-   <Navbar/>
+    <Switch>
+    <Navbar>
+      
+     <Route path="/Aboutme" componenet={Aboutme} />
+     <Route path="/Portfolio" componenet={Portfolio} />
+     <Route path="/Contacts" componenet={Contacts} />
+
+      </Navbar>
+    </Switch>
    <Header/>
-   </>
+   </Router>
+    </>
   );
 }
 

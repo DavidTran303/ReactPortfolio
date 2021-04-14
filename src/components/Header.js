@@ -5,16 +5,16 @@ import Typed from "react-typed";
 const Header = () => {
     return (
 <div className="header-wraper">
-    <div className="main-info">
-            <h1>Web Development and Websites </h1>
+ <div className="main-info">
+            <h1></h1>
             <Typed
             className="typed-text"
-            strings={["Hello", "My Name","Is", "David Tran", "I'm", "A","Full Stack", "Web", "Developer", "How", "Can", "I", "Help", "You", "Today?"]}
-            typeSpeed={25}
-            backSpeed={60}
+            strings={["Hello!!", "My Name Is David Tran", "Please Feel Free To", "Navigate With The Navbar", "Have A Great A Day :)" ]}
+            typeSpeed={45}
+            backSpeed={10}
             />
      <a href="#" className="btn-main-offer">Portfolio</a>
-     <a href="#" className="btn-main-offer">Contact Me</a>
+     <a href="#" className="btn-main-offer">Contact</a>
     </div>
 </div>
     )

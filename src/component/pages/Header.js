@@ -1,9 +1,29 @@
 import React from 'react';
 import Typed from "react-typed";
-
+import Particles from 'react-particles-js';
 
 const Header = () => {
     return (
+        <>  
+<Particles 
+    params={{
+      particles:{
+        number:{
+          value:30,
+          density:{
+            enable:true
+          }
+        },
+        shape:{
+          type:"triangle",
+          stroke:{
+            width: 8,
+            color:"pink"
+          }
+        }
+      }
+    }}
+    /> 
 <div className="header-wraper">
  <div className="main-info">
             <h1></h1>
@@ -17,6 +37,7 @@ const Header = () => {
      <a href="#" className="btn-main-offer">Contact</a>
     </div>
 </div>
+</>
     )
 }
 

@@ -17,6 +17,9 @@ const Navbar = () => {
     </button>
     <div className="collapse navbar-collapse" id="navbarSupportedContent">
         <ul className="navbar-nav ml-auto">
+           <li className="nav-item">
+          <Link  to="/">Home</Link>
+      </li>
       <li className="nav-item">
           <Link  to="/Aboutme">About Me</Link>
       </li>
@@ -24,7 +27,7 @@ const Navbar = () => {
         <Link to="/Portfolio">Portfolio</Link>
       </li>
       <li className="nav-item">
-          <Link to="/Contact">Contact</Link>
+          <Link to="/Contacts">Contacts</Link>
       </li>
     </ul>
     </div>

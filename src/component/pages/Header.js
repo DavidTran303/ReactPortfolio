@@ -33,8 +33,6 @@ const Header = () => {
             typeSpeed={45}
             backSpeed={10}
             />
-     <a href="#" className="btn-main-offer">Portfolio</a>
-     <a href="#" className="btn-main-offer">Contact</a>
     </div>
 </div>
 </>

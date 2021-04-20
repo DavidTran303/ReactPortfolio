@@ -3,9 +3,9 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import Navbar from './component/Navbar';
 import "./App.css";
 import Header from './component/pages/Header';
-import Aboutme from './component/pages/Aboutme';
+import Aboutme from './component/pages/Aboutme/Aboutme';
 import Portfolio from './component/pages/portfolio/Portfolio';
-import Contacts from './component/pages/Contacts';
+import Contacts from './component/pages/Contact/Contacts';
 
 import {
   BrowserRouter as Router,

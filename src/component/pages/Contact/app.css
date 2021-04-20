@@ -1,0 +1,12 @@
+.cardContact{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+}
+.card-img-top{
+       display: flex;
+       align-items: center;
+       justify-content: center;
+       width:30rem;
+       display:flex;
+}

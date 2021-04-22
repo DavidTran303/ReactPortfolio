@@ -3,6 +3,7 @@ import image from '../portfolio/adventureops.png';
 import  image1 from '../portfolio/chatengine.png';
 import image2 from '../portfolio/theactivist.png';
 import '../portfolio/app.css';
+
 const Portfolio = () => {
     return (
         <>
@@ -28,7 +29,7 @@ const Portfolio = () => {
     <div className="row">
         <div className="col-sm card">
             <div>
-                <img src="" alt="Zoom Reclone" aria-label="Zoom Reclone"/>
+                <img src={image} alt="Zoom Reclone" aria-label="Zoom Reclone"/>
                 <div>
                     <a href="https://github.com/DavidTran303/ZoomReclone" className="btn-main-offer">Zoom Reclone</a>
                 </div>
